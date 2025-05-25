@@ -55,7 +55,7 @@ function displayImages(images, baseURL) {
 }
 
 // Base URL where your images are hosted
-const baseURL = "https://yourdomain.com/images/";
+const baseURL = "https://aynaghor-studio.github.io/cdn_images/images/";
 
 // Array of your image filenames and alt text
 const images = [
