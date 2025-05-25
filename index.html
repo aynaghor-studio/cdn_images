@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minimalist Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-[#1A1A1A]">
+
+  <!-- Login Modal with initial animation classes -->
+  <div id="loginModal"
+       class="fixed inset-0 flex items-center justify-center bg-white z-50 opacity-0 scale-95 transition-all duration-500">
+    <form id="loginForm" class="bg-gray-100 p-8 rounded shadow-md w-80">
+      <h2 class="text-xl mb-4 font-semibold">Login</h2>
+
+      <input type="text" id="username" placeholder="Username"
+        class="w-full p-2 mb-4 border border-gray-300 rounded" />
+
+      <input type="password" id="password" placeholder="Password"
+        class="w-full p-2 mb-2 border border-gray-300 rounded" />
+
+      <label class="text-sm text-gray-600 flex items-center space-x-2 mb-4">
+        <input type="checkbox" id="showPassword" class="mr-1" />
+        <span>Show Password</span>
+      </label>
+
+      <button type="submit"
+        class="bg-[#4A90E2] text-white px-4 py-2 rounded w-full">Login</button>
+    </form>
+  </div>
+
+  <div id="gallery" class="hidden max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
+  <!-- Your JS script -->
+  <script src="gallery.js"></script>
+
+  <!-- Scripts -->
+  <script src="login.js"></script>
+  <script src="copy.js"></script>
+  <script src="protect.js"></script>
+</body>
+</html>
